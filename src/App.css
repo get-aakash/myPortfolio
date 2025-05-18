@@ -130,9 +130,11 @@ body {
 }
 
 .heading-line {
+    padding: 10px;
     display: flex;
     align-items: center;
     gap: 25px;
+    color: rgba(250, 235, 215, 0.288);
 }
 
 .line {
@@ -151,9 +153,39 @@ body {
     width: 950px;
     text-align: justify;
 }
+.about-description p{
+    margin-top: 10px;
+    text-align: justify;
+    width: 850px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(135, 132, 170);
+}
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 equal columns */
+  gap: 10px 40px;                 /* row-gap & column-gap */
+  list-style: none;
+  padding: 20;
+  margin:  20px;
+  max-width: 400px;   
+           /* optional: control width */
+}
+
+.skills-list li {
+  font-size: 1rem;
+  color:rgb(135, 132, 170);
+}
+.skills-list li::before {
+  content: "➜"; /* or use →, ›, ⇒, etc. */
+  margin-right: 8px;
+  color: #007bff; /* optional: arrow color */
+  font-weight: bold;
+}
 .image-box img{
-    height: 200px;
-    width: 220px;
+    height: 250px;
+    width: 250px;
     border-radius: 10px;
     margin-right: 80px;
 }

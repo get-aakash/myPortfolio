@@ -14,12 +14,15 @@ const About = () => {
           <p>
             I am currently a Software Development Engineer at Amazon, working in the AWS sector under team Route 53. At the same time, I am undertaking a part-time Master's of Science in Software Engineering at University of Oxford.</p>
           <p>Here are some technologies I have been working with:</p>
-          <p>Typescript
-            Python
-            React.js
-            Java
-            Javascript ES6+
-            C#</p>
+          <ul className='skills-list'>
+            <li>Typescript</li>
+            <li> React.js</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>C#</li>
+            <li>Javascript ES6+</li>
+          </ul>
+          
           <p>Outside of work, I'm interested in following the developments of science. I also play a lot of video games. And make TikToks.</p>
         </div>
         <div className="image-box">
