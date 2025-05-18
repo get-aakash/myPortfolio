@@ -24,7 +24,7 @@ body {
 }
 
 .left {
-    margin-left: 200px;
+    margin-left: 120px;
 }
 
 .left ul {
@@ -42,7 +42,7 @@ body {
     color: rgb(131, 124, 158);
 }
 
-.left li:hover{
+.left li:hover {
     color: rgb(90, 167, 167)
 }
 
@@ -64,36 +64,125 @@ body {
     color: rgb(131, 124, 158);
 }
 
-.right li:hover{
+.right li:hover {
     color: rgb(90, 167, 167)
 }
 
+.home-container {
+    display: grid;
+    place-items: center;
+    margin-top: 60px;
+
+}
+
+
+.image-container img {
+    width: 190px;
+    height: 350px;
+}
+
+.description-container {
+    display: grid;
+    place-items: center;
+}
+
+.description-container h1 {
+    font-size: 50px;
+    color: rgb(131, 124, 158);
+
+}
+
+.name {
+    color: #086761;
+    font-weight: bold;
+}
+
+.description-container h3 {
+    color: rgb(131, 124, 158);
+    font-size: 30px;
+}
+
+.description-container p {
+    margin-top: 12px;
+    text-align: justify;
+    width: 750px;
+    font-size: 20px;
+}
+
+.message-button {
+    margin: 20px 0px 20px 0px;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(90, 167, 167)
+}
+
+.message-button:hover {
+    color: rgb(135, 132, 170)
+}
+
+.about-container {
+    margin-top: 60px;
+}
+
+.heading-line {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.line {
+    height: 1px;
+    background-color:rgb(135, 132, 170);
+    width: 500px;
+}
+
+.about-basics{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start
+
+}
+.about-description{
+    width: 950px;
+    text-align: justify;
+}
+.image-box img{
+    height: 200px;
+    width: 220px;
+    border-radius: 10px;
+    margin-right: 80px;
+}
 
 
 
+@media (min-width: 481px) and (max-width: 767px) {
 
-@media (max-width: 767px){
 
-    .left ul{
-        
+    .left ul {
+
         display: none;
     }
 
-    .right ul{
+    .right ul {
         margin-right: 150px;
     }
 
 }
 
-@media (max-width: 768px){
-
-    .left ul{
-        
-        display: grid;
+@media (min-width: 768px) and (max-width: 991px) {
+    .left {
+        margin: 0px;
     }
 
-    .right ul{
-        margin-right: 150px;
-    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
+    }
 }
