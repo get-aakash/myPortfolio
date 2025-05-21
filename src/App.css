@@ -190,6 +190,16 @@ body {
     margin-right: 80px;
 }
 
+.project-slide{
+    display: flex;
+    justify-self: center;
+}
+.project{
+    padding: 30px;
+    margin: 20px;
+    border: 2px solid;
+    border-radius: 10px;
+}
 
 
 @media (min-width: 481px) and (max-width: 767px) {
