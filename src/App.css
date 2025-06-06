@@ -139,21 +139,22 @@ body {
 
 .line {
     height: 1px;
-    background-color:rgb(135, 132, 170);
+    background-color: rgb(135, 132, 170);
     width: 500px;
 }
 
-.about-basics{
+.about-basics {
     display: flex;
     justify-content: space-between;
-    align-items:flex-start
-
+    align-items: flex-start
 }
-.about-description{
+
+.about-description {
     width: 950px;
     text-align: justify;
 }
-.about-description p{
+
+.about-description p {
     margin-top: 10px;
     text-align: justify;
     width: 850px;
@@ -162,43 +163,82 @@ body {
     font-size: 20px;
     color: rgb(135, 132, 170);
 }
+
 .skills-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 equal columns */
-  gap: 10px 40px;                 /* row-gap & column-gap */
-  list-style: none;
-  padding: 20;
-  margin:  20px;
-  max-width: 400px;   
-           /* optional: control width */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* 2 equal columns */
+    gap: 10px 40px;
+    /* row-gap & column-gap */
+    list-style: none;
+    padding: 20;
+    margin: 20px;
+    max-width: 400px;
+    /* optional: control width */
 }
 
 .skills-list li {
-  font-size: 1rem;
-  color:rgb(135, 132, 170);
+    font-size: 1rem;
+    color: rgb(135, 132, 170);
 }
+
 .skills-list li::before {
-  content: "➜"; /* or use →, ›, ⇒, etc. */
-  margin-right: 8px;
-  color: #007bff; /* optional: arrow color */
-  font-weight: bold;
+    content: "➜";
+    /* or use →, ›, ⇒, etc. */
+    margin-right: 8px;
+    color: #007bff;
+    /* optional: arrow color */
+    font-weight: bold;
 }
-.image-box img{
+
+.image-box img {
     height: 250px;
     width: 250px;
     border-radius: 10px;
     margin-right: 80px;
 }
 
-.project-slide{
-    display: flex;
-    justify-self: center;
+.project-container {
+    padding: 2rem;
 }
-.project{
-    padding: 30px;
-    margin: 20px;
-    border: 2px solid;
+
+.project-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-carousel {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project {
+    width: 100%;
+    max-height: 350x;
+    object-fit: cover;
     border-radius: 10px;
+}
+
+.project-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.card-tag {
+    width: 18rem;
+    height: 45rem;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
 }
 
 
