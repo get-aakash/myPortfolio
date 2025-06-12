@@ -14,9 +14,9 @@ const Header = () => {
     </div>
     <div className="right">
         <ul>
-            <li><i class="fa-solid fa-envelope"></i></li>
-            <li><i class="fa-brands fa-github"></i></li>
-            <li><i class="fa-brands fa-linkedin-in"></i></li>
+            <li><i className="fa-solid fa-envelope"></i></li>
+            <li><i className="fa-brands fa-github"></i></li>
+            <li><i className="fa-brands fa-linkedin-in"></i></li>
         </ul>
 
     </div>

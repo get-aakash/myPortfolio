@@ -39,10 +39,10 @@ const Projects = () => {
       </div>
 
       <div className="project-card">
-        <Card className='card-tag' style={{ width: '18rem' }}>
+        <Card className='card-tag' >
           <div className="card-header">
-            <div className="img">folder</div>
-            <div className="left-header">github live</div>
+            <div className="img"><i class="fa-solid fa-folder"></i></div>
+            <div className="left-header"><i class="fa-brands fa-github"></i> <i class="fa-solid fa-arrow-up-from-bracket"></i></div>
           </div>
           <Card.Body>
             <Card.Title>Card Title</Card.Title>
@@ -53,7 +53,76 @@ const Projects = () => {
             <Button variant="primary">Go somewhere</Button>
           </Card.Body>
         </Card>
-        
+        <Card className='card-tag' >
+          <div className="card-header">
+            <div className="img"><i class="fa-solid fa-folder"></i></div>
+            <div className="left-header"><i class="fa-brands fa-github"></i> <i class="fa-solid fa-arrow-up-from-bracket"></i></div>
+          </div>
+          <Card.Body>
+            <Card.Title>Card Title</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
+          </Card.Body>
+        </Card>
+        <Card className='card-tag' >
+          <div className="card-header">
+            <div className="img"><i class="fa-solid fa-folder"></i></div>
+            <div className="left-header"><i class="fa-brands fa-github"></i> <i class="fa-solid fa-arrow-up-from-bracket"></i></div>
+          </div>
+          <Card.Body>
+            <Card.Title>Card Title</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
+          </Card.Body>
+        </Card>
+        <Card className='card-tag' >
+          <div className="card-header">
+            <div className="img"><i class="fa-solid fa-folder"></i></div>
+            <div className="left-header"><i class="fa-brands fa-github"></i> <i class="fa-solid fa-arrow-up-from-bracket"></i></div>
+          </div>
+          <Card.Body>
+            <Card.Title>Card Title</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
+          </Card.Body>
+        </Card>
+        <Card className='card-tag' >
+          <div className="card-header">
+            <div className="img"><i class="fa-solid fa-folder"></i></div>
+            <div className="left-header"><i class="fa-brands fa-github"></i> <i class="fa-solid fa-arrow-up-from-bracket"></i></div>
+          </div>
+          <Card.Body>
+            <Card.Title>Card Title</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
+          </Card.Body>
+        </Card>
+        <Card className='card-tag' >
+          <div className="card-header">
+            <div className="img"><i class="fa-solid fa-folder"></i></div>
+            <div className="left-header"><i class="fa-brands fa-github"></i> <i class="fa-solid fa-arrow-up-from-bracket"></i></div>
+          </div>
+          <Card.Body>
+            <Card.Title>Card Title</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
+          </Card.Body>
+        </Card>
 
 
       </div>

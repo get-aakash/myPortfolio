@@ -2,7 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
+ html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+}
+
 
 body {
     font-family: 'Poppins', 'Roboto', sans-serif;
@@ -12,19 +20,27 @@ body {
     background: linear-gradient(87deg,
             #183B4E 0%,
             #393E46 100%);
-    min-height: 100vh;
+    min-height: 150vh;
+    overflow: visible;
+    position: relative;
 
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 40px;
-
+  position: fixed;
+  top: 0;
+  width: 100%; /* ✅ Ensures it stretches across the page */
+  display: flex; /* ✅ Allows .left and .right to sit side by side */
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(24, 59, 78, 0.95);
+  z-index: 1000;
+  padding: 1rem 3rem; /* Better spacing instead of large margins */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .left {
-    margin-left: 120px;
+    margin-left: 0px;
 }
 
 .left ul {
@@ -47,7 +63,7 @@ body {
 }
 
 .right {
-    margin-right: 150px;
+    margin-right: 0px;
 }
 
 .right ul {
@@ -71,7 +87,7 @@ body {
 .home-container {
     display: grid;
     place-items: center;
-    margin-top: 60px;
+    margin-top: 120px;
 
 }
 
@@ -233,12 +249,19 @@ body {
 
 .card-tag {
     width: 18rem;
-    height: 45rem;
+    height: 80rem;
 }
 
 .card-header {
     display: flex;
     justify-content: space-between;
+}
+
+.footer-header{
+    padding-top: 40px ;
+    padding-bottom: 10px;
+    text-align: center;
+    color: rgb(135, 132, 170);
 }
 
 
