@@ -10,10 +10,6 @@ function App() {
   return (
     <div className="wrapper">
       <Header />
-      <div style={{ marginTop: '100px', padding: '20px' }}>
-        <p>Scroll down to test the fixed navbar.</p>
-        <div style={{ height: '2000px', background: '#eee' }}></div>
-      </div>
       <Home />
       <About />
       <Projects />

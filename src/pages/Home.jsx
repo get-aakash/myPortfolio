@@ -15,7 +15,7 @@ const Home = () => {
       </div>
 
       <div className="message-button">
-        <i class="fa-solid fa-envelope"></i>
+        <i className="fa-solid fa-envelope"></i>
         <p>say hi!</p>
       </div>
     </div>

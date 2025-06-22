@@ -2,6 +2,7 @@ import React from 'react'
 import { Button, Card, Carousel } from 'react-bootstrap'
 import project1 from '../assets/project1.png'
 import project2 from '../assets/project2.png'
+import { Link } from 'react-router-dom'
 
 const Projects = () => {
   return (
@@ -42,87 +43,56 @@ const Projects = () => {
         <Card className='card-tag' >
           <div className="card-header">
             <div className="img"><i class="fa-solid fa-folder"></i></div>
-            <div className="left-header"><i class="fa-brands fa-github"></i> <i class="fa-solid fa-arrow-up-from-bracket"></i></div>
+            <div className="left-header"><Link to="https://github.com/get-aakash/weatherApp.git" target='_blank'><i className="fa-brands fa-github"></i></Link> <Link to="https://weather-app-sand-beta-40.vercel.app/" target="_blank"><i className="fa-solid fa-arrow-up-from-bracket"></i></Link></div>
           </div>
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+            <Card.Title>Weather App</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              An Application to find out the weather created using React.
             </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            
           </Card.Body>
         </Card>
         <Card className='card-tag' >
           <div className="card-header">
             <div className="img"><i class="fa-solid fa-folder"></i></div>
-            <div className="left-header"><i class="fa-brands fa-github"></i> <i class="fa-solid fa-arrow-up-from-bracket"></i></div>
+            <div className="left-header"><Link to="https://github.com/get-aakash/Javascript_todo.git" target='_blank'><i class="fa-brands fa-github"></i></Link> <Link to="https://javascript-todo-seven.vercel.app/" target='_blank'><i class="fa-solid fa-arrow-up-from-bracket"></i></Link> </div>
           </div>
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+            <Card.Title>To Do App</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              A To Do app created using JavaScript.
             </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            
           </Card.Body>
         </Card>
         <Card className='card-tag' >
           <div className="card-header">
             <div className="img"><i class="fa-solid fa-folder"></i></div>
-            <div className="left-header"><i class="fa-brands fa-github"></i> <i class="fa-solid fa-arrow-up-from-bracket"></i></div>
+            <div className="left-header"><Link to="https://github.com/get-aakash/notesApp.git" target='_blank'><i class="fa-brands fa-github"></i></Link> <Link to="https://notes-app-puce-tau.vercel.app/" target='_blank'><i class="fa-solid fa-arrow-up-from-bracket"></i></Link> </div>
           </div>
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+            <Card.Title>Notes App</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              A simple Notes app to create and save notes created using JavaScript.
             </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            
           </Card.Body>
         </Card>
         <Card className='card-tag' >
           <div className="card-header">
             <div className="img"><i class="fa-solid fa-folder"></i></div>
-            <div className="left-header"><i class="fa-brands fa-github"></i> <i class="fa-solid fa-arrow-up-from-bracket"></i></div>
+            <div className="left-header"><Link to="https://github.com/get-aakash/myPortfolio.git" target='_blank'><i class="fa-brands fa-github"></i></Link> <Link to="https://my-portfolio-opal-chi-35.vercel.app/"><i class="fa-solid fa-arrow-up-from-bracket"></i></Link> </div>
           </div>
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+            <Card.Title>Portfolio Website</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              A portfolio website created using React.
             </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            
           </Card.Body>
         </Card>
-        <Card className='card-tag' >
-          <div className="card-header">
-            <div className="img"><i class="fa-solid fa-folder"></i></div>
-            <div className="left-header"><i class="fa-brands fa-github"></i> <i class="fa-solid fa-arrow-up-from-bracket"></i></div>
-          </div>
-          <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
-          </Card.Body>
-        </Card>
-        <Card className='card-tag' >
-          <div className="card-header">
-            <div className="img"><i class="fa-solid fa-folder"></i></div>
-            <div className="left-header"><i class="fa-brands fa-github"></i> <i class="fa-solid fa-arrow-up-from-bracket"></i></div>
-          </div>
-          <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
-          </Card.Body>
-        </Card>
+        
 
 
       </div>
