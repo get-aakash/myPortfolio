@@ -19,7 +19,6 @@ html, body, #root {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: visible;
   scroll-behavior: smooth;
   font-family: 'Poppins', 'Roboto', sans-serif;
   background-color: var(--navy);
@@ -29,7 +28,6 @@ html, body, #root {
 .wrapper {
   background: linear-gradient(87deg, var(--navy) 0%, var(--lightest-navy) 100%);
   min-height: 150vh;
-  overflow: visible;
   position: relative;
 }
 
@@ -41,7 +39,7 @@ html, body, #root {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(17, 34, 64, 0.95); /* var(--light-navy) with opacity */
+  background-color: rgba(17, 34, 64, 0.95);
   z-index: 1000;
   padding: 1rem 3rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -50,7 +48,6 @@ html, body, #root {
 .left {
   padding-left: 50px;
   padding-top: 10px;
-  margin-left: 0;
 }
 
 .left ul {
@@ -71,7 +68,6 @@ html, body, #root {
 
 .right {
   padding-right: 50px;
-  margin-right: 0;
 }
 
 .right ul {
@@ -108,6 +104,7 @@ html, body, #root {
 .description-container {
   display: grid;
   place-items: center;
+  text-align: center;
 }
 
 .description-container h1 {
@@ -150,57 +147,58 @@ html, body, #root {
   color: var(--slate);
 }
 
-/* About Section */
-.about-container {
-  margin-top: 60px;
+/* Centered Sections */
+.about-container,
+.project-container {
+  max-width: 800px;
+  margin: 6rem auto 0 auto;
+  padding: 0 1.5rem;
 }
 
+/* Headings */
 .heading-line {
-  padding: 10px;
   display: flex;
   align-items: center;
-  gap: 25px;
-  color: rgba(230, 241, 255, 0.288);
+  gap: 1rem;
+  color: var(--green);
+  margin-bottom: 1.5rem;
 }
 
 .line {
+  flex-grow: 1;
   height: 1px;
   background-color: var(--slate);
-  width: 500px;
 }
 
+/* About Section */
 .about-basics {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 
 .about-description {
-  width: 950px;
-  text-align: left;
-  color: var(--light-slate);
+  flex: 1 1 60%;
+  max-width: 700px;
 }
 
 .about-description p {
   margin-top: 10px;
-  text-align: justify;
-  width: 850px;
-  padding: 10px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1rem;
   color: var(--light-slate);
+  line-height: 1.6;
 }
 
 .skills-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px 40px;
+  gap: 0.5rem 2rem;
   list-style: none;
-  padding: 20px;
-  margin: 20px;
-  max-width: 400px;
-  color: var(--light-slate);
+  padding-left: 0;
+  margin: 1rem 0;
 }
 
 .skills-list li {
@@ -210,25 +208,23 @@ html, body, #root {
 
 .skills-list li::before {
   content: "➜";
-  margin-right: 8px;
+  margin-right: 0.5rem;
   color: var(--green);
   font-weight: bold;
 }
+.image-box {
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: flex-end;
+}
 
 .image-box img {
-  height: 250px;
-  width: 250px;
+  width: 200px;
   border-radius: 10px;
-  margin-right: 80px;
   box-shadow: 0 0 15px var(--green);
 }
 
 /* Projects Section */
-.project-container {
-  padding: 2rem;
-  margin-left: 0;
-}
-
 .project-slide {
   display: flex;
   flex-direction: column;
@@ -251,12 +247,13 @@ html, body, #root {
 }
 
 .project-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-  padding: 30px;
+ display: flex;
   flex-wrap: wrap;
+  gap: 2rem;
+  padding: 0 1.5rem;
+  max-width: 800px;
+  margin: 2rem auto 0 auto; /* centers the container itself */
+  justify-content: flex-start;
 }
 
 .card-tag {
@@ -289,22 +286,37 @@ html, body, #root {
 }
 
 /* Responsive */
-@media (min-width: 481px) and (max-width: 767px) {
-  .left ul {
+@media (max-width: 768px) {
+  .left ul, .right ul {
     display: none;
   }
-  .right ul {
-    margin-right: 150px;
-  }
-}
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .left {
-    margin: 0px;
+  .description-container h1 {
+    font-size: 2rem;
   }
-  .navbar {
-    display: flex;
-    justify-content: space-between;
+
+  .description-container h3 {
+    font-size: 1.25rem;
+  }
+
+  .description-container p,
+  .about-description p {
+    font-size: 0.95rem;
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+  .about-basics {
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+  }
+  .about-description {
+    text-align: center;
+  }
+  .image-box {
+    justify-content: center;
+    margin-top: 2rem;
   }
 }
