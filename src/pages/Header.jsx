@@ -14,9 +14,9 @@ const Header = () => {
     </div>
     <div className="right">
         <ul>
-            <li><i className="fa-solid fa-envelope"></i></li>
-            <li><i className="fa-brands fa-github"></i></li>
-            <li><i className="fa-brands fa-linkedin-in"></i></li>
+            <li><a href="mailto:mail.aakash108@gmail.com" target="_blank" className="icon-link"><i className="fa-solid fa-envelope"></i></a></li>
+            <li><a href='https://github.com/get-aakash' target="_blank" className="icon-link"><i className="fa-brands fa-github"></i></a></li>
+            <li><a href='https://www.linkedin.com/in/aakash-acharya/' target="_blank" className="icon-link"><i className="fa-brands fa-linkedin-in"></i></a></li>
         </ul>
 
     </div>
