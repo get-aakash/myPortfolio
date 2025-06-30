@@ -1,5 +1,5 @@
 import React from 'react'
-import img1 from '../assets/profile-img.jpg';
+import profileImg from '../assets/profileImg.jpg';
 
 const About = () => {
   return (
@@ -26,7 +26,7 @@ const About = () => {
           <p>Outside of work, I'm interested in following the developments of science. I also play golf sometimes.</p>
         </div>
         <div className="image-box">
-          <img src={img1} alt="" />
+          <img src={profileImg} alt="" />
 
         </div>
 
