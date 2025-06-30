@@ -5,7 +5,7 @@ import TypingHeader from '../utils/Typing Header';
 
 const Home = () => {
   return (
-    <div className="home-container">
+    <div className="home-container" id='home'>
       <div className="image-container">
         <Lottie
           animationData={laptopAnimation}
@@ -17,7 +17,7 @@ const Home = () => {
       <div className="description-container">
         <TypingHeader />
         <h3>I create stuff sometimes.</h3>
-        <p>I'm a software engineer from Toronto, Canada. I'm fascinated by large-scale, high-impact products and contributed to major feature launches in industry-leading services as well as apps that have 100M+ installs.</p>
+        <p>I’m a software engineer from Canberra, Australia, driven by a passion for creating large-scale, impactful products. Lately, I’ve been sharpening my skills by crafting elegant and responsive web applications using React Bootstrap, blending functionality with great user experiences.</p>
       </div>
       <a href="mailto:mail.aakash108@example.com" className="no-style-link">
         <div className="message-button">

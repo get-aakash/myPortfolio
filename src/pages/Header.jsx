@@ -5,11 +5,10 @@ const Header = () => {
    <div className="navbar">
     <div className="left">
         <ul>
-            <li>Aakash Acharya</li>
-            <li>Home</li>
-            <li>About</li>
-            <li>Experience</li>
-            <li>Projects</li>
+            <li><a href='#home' className="icon-link">Aakash Acharya</a></li>
+            <li><a href='#home' className="icon-link">Home</a></li>
+            <li><a href='#about' className="icon-link">About</a></li>
+            <li><a href='#projects' className="icon-link">Projects</a></li>
         </ul>
     </div>
     <div className="right">

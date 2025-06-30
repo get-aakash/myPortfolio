@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const Projects = () => {
   return (
-    <>
+    <div id='projects'>
       <div className="project-container">
         <div className="heading-line">
           <h1>/ pet projects</h1>
@@ -82,7 +82,7 @@ const Projects = () => {
         <Card className='card-tag' >
           <div className="card-header">
             <div className="img"><i class="fa-solid fa-folder"></i></div>
-            <div className="left-header"><Link to="https://github.com/get-aakash/myPortfolio.git" target='_blank'><i class="fa-brands fa-github"></i></Link> <Link to="https://my-portfolio-opal-chi-35.vercel.app/"><i class="fa-solid fa-arrow-up-from-bracket"></i></Link> </div>
+            <div className="left-header"><Link to="https://github.com/get-aakash/myPortfolio.git" target='_blank'><i class="fa-brands fa-github"></i></Link> <Link to="https://my-portfolio-opal-chi-35.vercel.app/" target='_blank'><i class="fa-solid fa-arrow-up-from-bracket"></i></Link> </div>
           </div>
           <Card.Body>
             <Card.Title>Portfolio Website</Card.Title>
@@ -96,7 +96,7 @@ const Projects = () => {
 
 
       </div>
-    </>
+    </div>
   )
 }
 
