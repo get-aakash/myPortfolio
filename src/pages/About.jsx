@@ -26,7 +26,7 @@ const About = () => {
           <p>Outside of work, I'm interested in following the developments of science. I also play golf sometimes.</p>
         </div>
         <div className="image-box">
-          <img src={profileImg} alt="" />
+          <img src="/assets/profileImg.jpg" alt="Profile" />
 
         </div>
 
