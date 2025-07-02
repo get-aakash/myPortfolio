@@ -15,7 +15,9 @@
   box-sizing: border-box;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -86,7 +88,8 @@ html, body, #root {
 .right li:hover {
   color: var(--green);
 }
-.icon-link{
+
+.icon-link {
   color: inherit;
   text-decoration: none;
 
@@ -98,6 +101,7 @@ html, body, #root {
   place-items: center;
   margin-top: 100px;
 }
+
 .image-container {
   display: flex;
   justify-content: center;
@@ -107,24 +111,32 @@ html, body, #root {
 
 
 .image-container img {
-  width: 190px;
-  height: 350px;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 0 15px var(--green);
 }
+
 .no-style-link {
   text-decoration: none !important;
   color: inherit !important;
-  display: inline-block; /* or block, depending on your layout */
+  display: inline-block;
+  /* or block, depending on your layout */
 }
+
 .cursor {
   display: inline-block;
-  width: 2px;               /* slim width */
-  height: 1.2em;            /* height matches the text */
-  background-color: #64ffda; /* teal color or any you prefer */
+  width: 2px;
+  /* slim width */
+  height: 1.2em;
+  /* height matches the text */
+  background-color: #64ffda;
+  /* teal color or any you prefer */
   margin-left: 2px;
   user-select: none;
-  vertical-align: bottom;    /* aligns with the text baseline */
+  vertical-align: bottom;
+  /* aligns with the text baseline */
   animation: blink 1s step-start infinite;
 }
 
@@ -152,10 +164,11 @@ html, body, #root {
 }
 
 .description-container p {
-  margin-top: 12px;
+   margin-top: 12px;
   text-align: justify;
-  width: 750px;
-  font-size: 20px;
+  width: 100%;
+  max-width: 90%;
+  font-size: 18px;
   color: var(--light-slate);
 }
 
@@ -172,7 +185,7 @@ html, body, #root {
   font-weight: bold;
 }
 
-.message-button p{
+.message-button p {
   margin-top: 15px;
 }
 
@@ -245,6 +258,7 @@ html, body, #root {
   color: var(--green);
   font-weight: bold;
 }
+
 .image-box {
   flex: 1 1 30%;
   display: flex;
@@ -270,8 +284,10 @@ html, body, #root {
   max-width: 800px;
   margin: 0 auto;
 }
+
 .my-carousel .carousel-item {
-  height: 500px; /* fixed height for all items */
+  height: 500px;
+  /* fixed height for all items */
 }
 
 .project {
@@ -283,12 +299,13 @@ html, body, #root {
 }
 
 .project-card {
- display: flex;
+  display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   padding: 0 1.5rem;
   max-width: 800px;
-  margin: 2rem auto 0 auto; /* centers the container itself */
+  margin: 2rem auto 0 auto;
+  /* centers the container itself */
   justify-content: center;
 }
 
@@ -327,45 +344,154 @@ html, body, #root {
 }
 
 @keyframes blink {
-  0%, 50% {
+
+  0%,
+  50% {
     opacity: 1;
   }
-  50.01%, 100% {
+
+  50.01%,
+  100% {
     opacity: 0;
   }
 }
+
 /* Responsive */
 @media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .left, .right {
+    padding: 0;
+  }
+
   .left ul, .right ul {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 
   .description-container h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .description-container h3 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
 
   .description-container p,
   .about-description p {
-    font-size: 0.95rem;
+    font-size: 1rem;
+    width: 90%;
   }
 
   .skills-list {
     grid-template-columns: 1fr;
   }
+
+  .about-basics {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-box img {
+    width: 150px;
+  }
+
+  .project-card {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .card-tag {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .my-carousel .carousel-item {
+    height: auto;
+  }
+
+  .project {
+    height: auto;
+    object-fit: contain;
+  }
+
+  .footer-header h3 {
+    font-size: 1rem;
+  }
+
+  .footer-header p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .home-container {
+    margin-top: 80px;
+    padding: 1rem;
+  }
+
+  .description-container p {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .image-container img {
+    width: 150px;
+    height: auto;
+  }
+
   .about-basics {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 1rem;
   }
-  .about-description {
-    text-align: center;
+
+  .skills-list {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
   }
-  .image-box {
-    justify-content: center;
-    margin-top: 2rem;
+
+  .image-box img {
+    width: 150px;
+  }
+
+  .my-carousel .carousel-item {
+    height: auto;
+  }
+
+  .project {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .project-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-tag {
+    width: 90%;
+  }
+
+  .footer-header h3 {
+    font-size: 1rem;
+  }
+
+  .footer-header p {
+    font-size: 0.8rem;
   }
 }
