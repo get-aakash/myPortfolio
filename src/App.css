@@ -363,20 +363,26 @@ body,
 /* Responsive */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
+    justify-content: center;
     padding: 1rem;
   }
   
-
-  .left, .right {
+.left {
+    display: none;
+  }
+  .right {
     padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 
-  .left ul, .right ul {
+  .right ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
   }
 
   .description-container h1 {
